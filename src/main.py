@@ -1,5 +1,5 @@
 import endpoints
-from app import app
+from loader import app
 
 
 # @app.get("/")
