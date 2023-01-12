@@ -1,3 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
+from db import set_db
 
-app = FastAPI()
+app = FastAPI(
+    dependencies=[
+        Depends(set_db)
+    ]
+)
